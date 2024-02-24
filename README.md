@@ -36,7 +36,7 @@ Use the following tools to set up the project:
 
 ## Run locally
 
-1. Fork the repository by clicking on `Fork` option on top right of the main repository.
+1. Fork the repository by clicking on `Fork` option on top right of the main repository
 
 2. Open Command Prompt on your local computer.
 
