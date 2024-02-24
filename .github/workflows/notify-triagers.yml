@@ -33,8 +33,8 @@ jobs:
         run: |
           mdTriagers=$(jq -r '.mdTriagers[]' triagers.json | tr '\n' ' ')
           codeTriagers=$(jq -r '.codeTriagers[]' triagers.json | tr '\n' ' ')
-          echo "{md-triagers}={$mdTriagers}" >> $GITHUB_OUTPUT
-          echo "{code-triagers}={$codeTriagers}" >> $GITHUB_OUTPUT
+          echo "md-triagers=$mdTriagers" >> $GITHUB_OUTPUT
+          echo "code-triagers=$codeTriagers" >> $GITHUB_OUTPUT
 
       - name: Create Comment for .md files
         if: steps.md-pr-changes.outputs.any_changed == 'true'
