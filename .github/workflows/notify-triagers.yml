@@ -31,8 +31,8 @@ jobs:
         if: steps.md-pr-changes.outputs.any_changed == 'true' || steps.non-md-pr-changes.outputs.any_changed == 'true'
         id: read-triagers-json
         run: |
-          mdTriagers=$(jq -r '.mdTriagers[]' triagers.json)
-          codeTriagers=$(jq -r '.codeTriagers[]' triagers.json)
+          mdTriagers=$(jq -r '.mdTriagers[]' triagers.json | tr '\n' ' ')
+          codeTriagers=$(jq -r '.codeTriagers[]' triagers.json | tr '\n' ' ')
           echo "{md-triagers}={$mdTriagers}" >> $GITHUB_OUTPUT
           echo "{code-triagers}={$codeTriagers}" >> $GITHUB_OUTPUT
 
