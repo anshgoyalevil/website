@@ -1,7 +1,6 @@
 [![AsyncAPI Banner and Logo](./public/img/logos/github-repobanner-website.png)](https://www.asyncapi.com)
 
 
-
 <br/>
 <p align="center">
     <a href="https://github.com/asyncapi/website/graphs/contributors" alt="AsyncAPI GitHub website contributors">
