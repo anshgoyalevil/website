@@ -1,6 +1,6 @@
 [![AsyncAPI Banner and Logo](./public/img/logos/github-repobanner-website.png)](https://www.asyncapi.com)
 
----
+-
 
 <br/>
 <p align="center">
