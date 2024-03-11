@@ -34,15 +34,6 @@ jobs:
           echo "md-triagers=$mdTriagers" >> $GITHUB_OUTPUT
           echo "code-triagers=$codeTriagers" >> $GITHUB_OUTPUT
 
-      - name: Store comments to file
-        if: steps.md-pr-changes.outputs.any_changed == 'true' || steps.non-md-pr-changes.outputs.any_changed == 'true'
-        run: |
-          if [ -f existing_comments.txt ]; then
-            rm existing_comments.txt
-          fi
-          echo "[file-type: md]" >> existing_comments.txt
-          echo "[file-type: non-md]" >> existing_comments.txt
-
       - name: Add Reviewers
         if: steps.md-pr-changes.outputs.any_changed == 'true' || steps.non-md-pr-changes.outputs.any_changed == 'true'
         run: |
