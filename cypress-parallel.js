@@ -29,3 +29,5 @@ function traverse(dir) {
     .reduce((all, folderContents) => all.concat(folderContents), []);
 
 }
+
+
