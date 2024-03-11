@@ -39,13 +39,12 @@ jobs:
         uses: actions/github-script@v6
         with:
           github-token: ${{ secrets.GH_TOKEN }}
-          script: | 
+          script: |
             github.rest.issues.createComment({
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: "The PR contains modifications to `.md` files, hence tagging Code triagers for review and approval.
-                    cc: ${{ steps.read-triagers-json.outputs.code-triagers }}"
+              body: "The PR contains modifications to `.md` files, hence tagging Code triagers for review and approval.\ncc: ${{ steps.read-triagers-json.outputs.code-triagers }}"
             })
 
       - name: Create comment for .md files
@@ -53,11 +52,10 @@ jobs:
         uses: actions/github-script@v6
         with:
           github-token: ${{ secrets.GH_TOKEN }}
-          script: | 
+          script: |
             github.rest.issues.createComment({
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: "The PR contains modifications to `.md` files, hence tagging Docs triagers for review and approval.
-                    cc: ${{ steps.read-triagers-json.outputs.md-triagers }}"
+              body: "The PR contains modifications to `.md` files, hence tagging Docs triagers for review and approval.\ncc: ${{ steps.read-triagers-json.outputs.md-triagers }}"
             })
