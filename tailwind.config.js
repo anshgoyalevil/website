@@ -2,7 +2,7 @@ const colors = require('tailwindcss/colors');
 const defaultTheme = require('tailwindcss/defaultTheme')
 const plugin = require('tailwindcss/plugin')
 
-// delete deprecated colors that we don't use
+// delete deprecated colors that we don't
 delete colors['lightBlue'];
 delete colors['warmGray'];
 delete colors['trueGray'];
