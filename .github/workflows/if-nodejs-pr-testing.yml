@@ -79,5 +79,5 @@ jobs:
         with:
           fail_ci_if_error: true
           files: ./coverage/lcov.info
-          token: e340f20d-57e6-400d-847e-fa587b74f5c3
+          token: d17ef186-54f7-4926-a4ff-df3c7de372bd
           verbose: true
