@@ -6,6 +6,12 @@ async function buildMeetings(writePath) {
   let auth;
   let calendar;
 
+  function testFunction(){
+    var a = 1;
+    a++;
+    console.log("Hello there");
+  }
+
   try {
     auth = new google.auth.GoogleAuth({
       scopes: ['https://www.googleapis.com/auth/calendar'],
