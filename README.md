@@ -2,7 +2,7 @@
 
 ---
 
-<br/>
+<br/>.
 <p align="center">
     <a href="https://github.com/asyncapi/website/graphs/contributors" alt="AsyncAPI GitHub website contributors">
       <img src="https://img.shields.io/github/contributors/asyncapi/website?color=orange" />
