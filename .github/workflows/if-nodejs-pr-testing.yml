@@ -42,8 +42,10 @@ jobs:
       - if: steps.should_run.outputs.shouldrun == 'true'
         name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          ref: "${{ github.event.pull_request.merge_commit_sha }}"
+      - name: Fetch pull request branch
+        run: git fetch origin +refs/pull/${{ github.event.pull_request.number }}/merge
+      - name: Checkout pull request branch
+        run: git checkout -qf FETCH_HEAD
       - if: steps.should_run.outputs.shouldrun == 'true'
         name: Check if Node.js project and has package.json
         id: packagejson
