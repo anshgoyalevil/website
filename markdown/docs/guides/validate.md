@@ -1,5 +1,4 @@
 ---
-title: "Validate AsyncAPI documents"
 description: In this guide, you'll learn multiple ways to validate AsyncAPI documents.
 weight: 120
 ---
