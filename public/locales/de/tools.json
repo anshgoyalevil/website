@@ -9,6 +9,7 @@
         "exampleTitle": "Beispiel",
         "exampleDescription": "Erstellen Sie eine neue AsyncAPI-Datei",
         "featuresTitle": "Eigenschaften",
+        "ctrlBtn": "German Translation",
         "featuresDescription": "Verwenden Sie das AsyncAPI-CLI-Tool, um Ihre AsyncAPI-Dateien zu erstellen, zu entwickeln und zu pflegen.",
         "features": {
             "new-files.name": "Neue Dateien",
